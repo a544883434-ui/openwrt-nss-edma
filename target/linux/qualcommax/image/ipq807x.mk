@@ -467,6 +467,8 @@ define Device/redmi_ax6-stock
 	DEVICE_ALT0_VARIANT := (custom U-Boot layout)
 	KERNEL_SIZE :=
 	ARTIFACTS :=
+	IMAGES += factory.ubi
+	IMAGE/factory.ubi := append-ubi
 endef
 TARGET_DEVICES += redmi_ax6-stock
 
